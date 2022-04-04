@@ -24,7 +24,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'roxma/nvim-yarp'
     Plug 'ncm2/ncm2-bufword'
     Plug 'ncm2/ncm2-path'
-    Plug 'Sirver/ultisnips'
+    Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
     Plug 'ctrlpvim/ctrlp.vim'
 
@@ -53,7 +53,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'lewis6991/gitsigns.nvim'
     Plug 'voldikss/vim-floaterm'
-    Plug 'folke/which-key.nvim'
+    Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
 

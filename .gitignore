@@ -1,0 +1,12 @@
+" individual files in repo root to be excluded from nvim repo
+TokenApril2022
+
+"Do not source vim.plug since curl will always install latest
+/autoload/plug.vim
+
+"Exclude all og the individual plugin named directories
+/autoload/plugged/*/
+
+
+
+

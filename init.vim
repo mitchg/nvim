@@ -61,6 +61,8 @@ hi FloatermBorder guibg=orange guifg=cyan
 "   Which-key.nvim
 " key configurations
 " Map leader to which_key
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
 nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 

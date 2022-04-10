@@ -2,7 +2,8 @@
 
 ##General Description
 
-    Detail the steps I have used to install Newovim on Ubuntu.
+    Dear reader,
+    Here are the  detailed steps Iused to install Newovim on Ubuntu.
     Configure neovim using plug.vim
     Provide some basic knowledge for using the plugins.
     Install git, configure git as well as pluggins that use git.

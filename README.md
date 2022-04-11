@@ -20,12 +20,14 @@
     
     '''
     $ sudo add-apt-repository ppa:neovim-ppa/unstable
+    
     '''
     
     * Update and Install
     '''
     $ sudo apt-get update
     $ sudo apt-get install neovim
+    
     '''
     
     - Install Prereqs (just incase they are not automagically installed).

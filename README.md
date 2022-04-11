@@ -3,6 +3,7 @@
 ## General Description
 
 Dear Reader,
+
 Detail the steps I have used to install Newovim on Ubuntu.
 Configure neovim using plug.vim
 Provide some basic knowledge for using the plugins.

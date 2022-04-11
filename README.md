@@ -13,7 +13,9 @@
 ## Sections
 
 ### Neovim Install for Ubuntu 20.04
+
     * Open Terminal
+    
     * Add The Repository
     
     '''

@@ -43,12 +43,19 @@ downloaded and installed by the plug.vim program.
 
 
 `mkdir -P ~/.config/nvim`
+
 `cd ~/.config/nvim`
+
 `touch init.vim`
 
+
 `mkdir -P ~/.config/nvim/vim-plugged`
+
 `cd ~/.configi/nvim/vim-plug`
+
 `touch plugins.vim`
+
+
 
 
 

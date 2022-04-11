@@ -13,14 +13,14 @@
 ## Sections
 
 ### Neovim Install for Ubuntu 20.04
-    - Open Terminal
-    - Add The Repository
+    * Open Terminal
+    * Add The Repository
     
     '''
     $ sudo add-apt-repository ppa:neovim-ppa/unstable
     '''
     
-    - Update and Install
+    * Update and Install
     '''
     $ sudo apt-get update
     $ sudo apt-get install neovim

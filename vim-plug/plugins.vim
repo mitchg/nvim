@@ -41,7 +41,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     "A light and configurable statusline/tabline plugin.
     Plug 'itchyny/lightline.vim'
-
+    Plug 'vimwiki/vimwiki'
     "Highly extensible fuzzy finder over lists for Neovim
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate all'}

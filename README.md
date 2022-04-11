@@ -1,4 +1,4 @@
-# Neovim setup and configuration with plug.vim and git plugins.
+# Neovim setup and configuration with plug.vim and plugins.
 
 ## General Description
 
@@ -32,3 +32,30 @@ I consider these folks to be my teachers/mentors on Neovim setup and configurati
 * **Run the following;**
 
 `Sudo apt install neovim`
+
+### Configure Neovim
+
+* **Create the following directory structure**
+The file init.vim is where all other config file will be sourced.
+Plugins.vim will be where each plugin is listed by plug.vim.
+~/.config/nvim/autoload/plugged/ is the directory where each plugin will be 
+downloaded and installed by the plug.vim program.
+
+
+`mkdir -P ~/.config/nvim`
+`cd ~/.config/nvim`
+`touch init.vim`
+
+`mkdir -P ~/.config/nvim/vim-plugged`
+`cd ~/.configi/nvim/vim-plug`
+`touch plugins.vim`
+
+
+
+
+### Install plug.vim on Neovim
+
+
+
+### Install Git on Your Ubuntu box.
+

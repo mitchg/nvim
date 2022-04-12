@@ -17,21 +17,21 @@ I consider these folks to be my teachers/mentors on Neovim setup and configurati
 * **Open Terminal**
 * **Add The Repository**
 
-`$ sudo add-apt-repository ppa:neovim-ppa/unstable`
+    `$ sudo add-apt-repository ppa:neovim-ppa/unstable`
 
 * **Update and Install**
 
-`$ sudo apt-get update`
+    `$ sudo apt-get update`
 
-`$ sudo apt-get install neovim`
+    `$ sudo apt-get install neovim`
 
 * **Install Prereqs (just incase they are not automagically installed).**
 
-`sudo apt-get install python-dev python-pip python3-dev python3-pip`
+    `sudo apt-get install python-dev python-pip python3-dev python3-pip`
 
 * **Run the following;**
 
-`Sudo apt install neovim`
+    `Sudo apt install neovim`
 
 ### Configure Neovim
 
@@ -42,23 +42,18 @@ Plugins.vim will be where each plugin is listed by plug.vim.
 downloaded and installed by the plug.vim program.
 
 
-`mkdir -P ~/.config/nvim`
+    `mkdir -P ~/.config/nvim`
 
-`cd ~/.config/nvim`
+    `cd ~/.config/nvim`
 
-`touch init.vim`
-
-
-`mkdir -P ~/.config/nvim/vim-plugged`
-
-`cd ~/.configi/nvim/vim-plug`
-
-`touch plugins.vim`
+    `touch init.vim`
 
 
+    `mkdir -P ~/.config/nvim/vim-plugged`
 
+    `cd ~/.configi/nvim/vim-plug`
 
-
+    `touch plugins.vim`
 
 ### Install plug.vim on Neovim
 

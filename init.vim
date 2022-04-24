@@ -127,6 +127,19 @@ let g:which_key_map.s = {
       \ 'z' : [':FZF'          , 'FZF'],
       \ }
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+    " Nerdtree  
+    " Basic key mappings
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-c> :NERDTreeClose<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")
 

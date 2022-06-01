@@ -13,7 +13,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/gv.vim'
     Plug 'tpope/vim-rhubarb'
 
-    "Plug 'preservim/nerdtree'
+    Plug 'preservim/nerdtree'
     "Add filetype specific icons to NERDTree files and folders
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ryanoasis/vim-devicons'       

@@ -1,5 +1,5 @@
 # Neovim setup and configuration with plug.vim and plugins.
-
+hurray
 ## General Description
 
 Dear Reader,

@@ -24,8 +24,9 @@ autocmd vimenter * ++nested colorscheme onedark
 
 let g:lightline = { 'colorscheme': 'onedark',}
 let g:onedark_use_term_italics = 1
-let g:python3_host_prog = '/usr/bin/python3.8'
+let g:python3_host_prog = '/usr/bin/python3.10'
 
+"hurray
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "   Telescope 
@@ -143,7 +144,16 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+lua require('lua_config')
+let g:completion_enable_fuzzy_match = 1
+set completeopt=menuone,noinsert,noselect
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"   Lazygit
 
-
+let g:lazygit_floating_window_winblend = 0 " transparency of floating window
+let g:lazygit_floating_window_scaling_factor = 0.9 " scaling factor for floating window
+let g:lazygit_floating_window_corner_chars = ['╭', '╮', '╰', '╯'] " customize lazygit popup window corner characters
+let g:lazygit_floating_window_use_plenary = 0 " use plenary.nvim to manage floating window if available
 

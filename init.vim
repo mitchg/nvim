@@ -1,4 +1,4 @@
-"new ballgame
+
 
 
 source $HOME/.config/nvim/vim-plug/plugins.vim
@@ -12,14 +12,19 @@ source $HOME/.config/nvim/keys/mappings.vim
 set nocompatible
 filetype on
 set number
+""""""""""""""""""""""""""""""""""""""
+"""Test
+""lua <<EOF
+""print('hello from lua')
+""EOF
 
-
+""lua require ('basic')
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has('nvim') && executable('nvr')
   let $GIT_EDITOR = "nvr -cc split --remote-wait +'set bufhidden=wipe'"
 endif
 
-lua require('config') 
+"lua require('config') 
 autocmd vimenter * ++nested colorscheme onedark
 
 let g:lightline = { 'colorscheme': 'onedark',}
@@ -154,6 +159,35 @@ set completeopt=menuone,noinsert,noselect
 
 let g:lazygit_floating_window_winblend = 0 " transparency of floating window
 let g:lazygit_floating_window_scaling_factor = 0.9 " scaling factor for floating window
-let g:lazygit_floating_window_corner_chars = ['╭', '╮', '╰', '╯'] " customize lazygit popup window corner characters
+"let g:lazygit_floating_window_corner_chars = ['╭', '╮', '╰', '╯'] " customize lazygit popup window corner characters
 let g:lazygit_floating_window_use_plenary = 0 " use plenary.nvim to manage floating window if available
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"   completion-nvim
+
+lua require 'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
+"Use completion-nvinm in every buffer.
+autocmd BufEnter * lua require'completion'.on_attach()
+
+
+" Set completeopt to have a beteter completion experience
+set completeopt=menuone,noinsert,noselect
+
+" Avoid showing message extra message when using completion
+set shortmess+=c
+
+"By default other snippets are disabled unless specified as below.
+let g:completion_enable_snippet = 'snippets.nvim'
+
+let g:completion_enable_auto_popup = 0
+imap <tab> <Plug>(completion_smart_tab)
+
+" Confirm completion    
+let g:completion_confirm_key = "\<C-y>"
+
+"Auto hover is called by default 
+let g:completion_enable_auto_hover =1
+
+let g:completion_matching_smart_case = 1
+
 

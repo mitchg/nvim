@@ -1,3 +1,5 @@
+"local Plug = vim.fn['plug#']
+
 call plug#begin('~/.config/nvim/autoload/plugged')
     "Better Syntax Support
     Plug 'sheerun/vim-polyglot'
@@ -40,7 +42,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'joshdick/onedark.vim'
 
     "A light and configurable statusline/tabline plugin.
-    Plug 'itchyny/lightline.vim'
+""    Plug 'itchyny/lightline.vim'
     Plug 'vimwiki/vimwiki'
     "Highly extensible fuzzy finder over lists for Neovim
     Plug 'nvim-telescope/telescope.nvim'
@@ -54,7 +56,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'lewis6991/gitsigns.nvim'
     Plug 'voldikss/vim-floaterm'
     Plug 'liuchengxu/vim-which-key'
+    Plug 'norcalli/snippets.nvim'
 
 call plug#end()
 
+lua require('lspconfig').tsserver.setup{}
 
